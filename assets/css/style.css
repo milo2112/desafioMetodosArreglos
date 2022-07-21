@@ -1,0 +1,108 @@
+        body {
+            display: flex;
+            flex-direction: column;
+            padding-top: 8%;
+            align-items: center;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container {
+            height: 500px;
+            width: 1200px;
+            justify-self: center;
+            border-radius: 20px;
+            /*Distribución y posicionamiento*/
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.8fr 1.2fr;
+            grid-template-areas:
+                "input input"
+                "summary list";
+        }
+
+
+        .input {
+            grid-area: input;
+            height: 200px;
+            width: 1200px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: rgb(199, 199, 199);
+        }
+
+        .input #newTask {
+            width: 1000px;
+            height: 43px;
+            margin-left: 25px;
+        }
+
+        .text {
+            margin-left: 25px;
+        }
+
+        hr {
+            width: 1110px;
+            margin-right: 60px
+        }
+
+        .input #addTask {
+            width: 100px;
+            height: 50px;
+            background-color: green;
+            color: white;
+        }
+
+        .input p {
+            margin: 0%;
+            margin-left: 25px;
+            margin-top: 35px;
+        }
+
+
+        .summary {
+            grid-area: summary;
+            height: 300px;
+            width: 600px;
+            border-bottom-left-radius: 20px;
+            background-color: rgb(199, 199, 199);
+        }
+
+        .summary h4 {
+            margin-left: 25px;
+        }
+
+        .list {
+            grid-area: list;
+            height: 300px;
+            width: 600px;
+            border-bottom-right-radius: 20px;
+            background-color: rgb(199, 199, 199);
+        }
+
+        .titles {
+            display: flex;
+            flex-direction: row;
+            column-gap: 55px;
+            padding-bottom: 0px;
+        }
+
+        #taskList {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .unordList {
+            display: flex;
+            flex-direction: row;
+            justify-items: flex-start;
+        }
+
+        #idTaskList {
+            padding-left: 0%;
+
+        }

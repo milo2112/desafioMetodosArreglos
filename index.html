@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Desafio Metodos de arreglos</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="input">
+            <strong>
+                <h1 class="text">ToDo List</h1>
+            </strong>
+            <hr>
+            <p class="text">Nueva tarea</p>
+            <input id="newTask">
+            <button id="addTask"><strong>Agregar</strong></button>
+        </div>
+
+        <div class="summary">
+            <h4 class="totalText">Total: <span id="totalVar">0</span></h4>
+            <h4 class="doneText">Realizadas: <strong><span id="doneVar">0</span></strong></h4>
+        </div>
+
+        <div class="list" style="overflow: scroll">
+            <div class="titles">
+                <strong>
+                    <h4 class="idText">ID</h4>
+                </strong> 
+                <strong>
+                    <h4 class="taskText">Tarea</h4>
+                </strong>
+            </div>
+
+            
+            <div class="unordList">
+                <ul id="idTaskList" style="line-height:180%"></ul>
+                <ul id="taskList" style="line-height:180%"></ul>
+                <ul id="done" style="line-height:180%"></ul>
+                <ul id="delete" style="line-height:180%"></ul>
+            </div>
+
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
